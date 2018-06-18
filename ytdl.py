@@ -15,7 +15,7 @@ print("Enter the number of the video: ")
 n = int(input())
 vid = videos[n-1]
 
-destination = 'F:\Python Projects\Youtube Downloader\Videos'
+destination = 'Path to video folder'
 vid.download(destination)
 
 print(yt.filename + "\nHas been successfully downloaded.")
