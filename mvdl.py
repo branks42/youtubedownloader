@@ -6,6 +6,7 @@ import re
 print("Enter the video name: ")
 song = input()
 
+# Search YouTube and return the first video result
 query_string = urllib.parse.urlencode({"search_query" : song})
 html_content = urllib.request.urlopen("https://www.youtube.com/results?" + query_string)
 search_results = re.findall(r'href=\"\/watch\?v=(.{11})', html_content.read().decode())
