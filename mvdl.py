@@ -26,4 +26,4 @@ vid = videos[n-1]
 destination = 'Path to download folder' # Paste the directory you'd like to save to
 vid.download(destination)
 
-print(yt.filename + "\nHas been successfully downloaded.")
+print(yt.filename + "\nHas been downloaded successfully.")
