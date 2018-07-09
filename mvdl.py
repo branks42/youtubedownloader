@@ -19,11 +19,11 @@ for v in videos:
 	print(str(s) + ". " + str(v))
 	s += 1
 
-print("Enter the number of the video: ")
+print("Enter the number of the video you'd like: ")
 n = int(input())
 vid = videos[n-1]
 
-destination = 'Path to download folder'
+destination = 'Path to download folder' # Paste the directory you'd like to save to
 vid.download(destination)
 
 print(yt.filename + "\nHas been successfully downloaded.")
