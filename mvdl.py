@@ -14,6 +14,7 @@ search_results = re.findall(r'href=\"\/watch\?v=(.{11})', html_content.read().de
 yt = pytube.YouTube("https://www.youtube.com/watch?v=" + search_results[0])
 videos = yt.get_videos()
 
+# Shows video qualitys available to DL for top result
 s = 1
 for v in videos:
 	print(str(s) + ". " + str(v))
