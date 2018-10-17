@@ -18,4 +18,4 @@ vid = videos[n-1]
 destination = 'Path to video folder'
 vid.download(destination)
 
-print(yt.filename + "\nHas been successfully downloaded.")
+print(yt.filename + "\nHas successfully downloaded.")
